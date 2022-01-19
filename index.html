@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <title>Shoes Market</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="./Imagenes/logoshoesmarket/logo-shoes-market.webp" alt="Logo Shoes Market">
+            <h1 class="nombre-tienda">Shoes Market</h1>
+            <ul class="menu-container" id="menu">
+                <li class="clase-inline casual"><a href="./views/casual.html">Casual</a></li>
+                <li class="clase-inline running"><a href="./views/running.html">Running</a></li>
+                <li class="clase-inline futbol"><a href="./views/futbol.html">Fútbol</a></li>
+                <li class="clase-inline baloncesto"><a href="./views/baloncesto.html">Baloncesto</a></li>
+            </ul>
+            <div class="menu-bar" id="menu-bar">
+                <i class="fas fa-bars" style="color:white"></i>
+            </div>
+            <div class="shopping">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Inicio Slider -->
+    <section class="slider-section">
+        <h2 class="subtitulos">Ofertas de la semana</h2>
+        <div class="bloque-slider">
+            <ul class="lista-slider">
+                <li id="slider-adidas">
+                    <img src="Imagenes/adidasoferta.png" alt="oferta adidas">
+                </li>
+                <li id="slider-jordan">
+                    <img src="Imagenes/jordanoferta.png" alt="oferta jordan">
+                </li>
+                <li id="slider-nike">
+                    <img src="Imagenes/nikeoferta.png" alt="oferta nike">
+                </li>
+                <li id="slider-reebok">
+                    <img src="Imagenes/reebokoferta.png" alt="oferta reebok">
+                </li>
+            </ul>
+            <ul class="slider-menu">
+                <li>
+                    <a href="#slider-adidas">Adidas</a>
+                </li>
+                <li>
+                    <a href="#slider-jordan">Jordan</a>
+                </li>
+                <li>
+                    <a href="#slider-nike">Nike</a>
+                </li>
+                <li>
+                    <a href="#slider-reebok">Reebok</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Final Slider -->
+    <!-- Section dos -->
+    <section class="section-dos-index">
+        <div class="section-dos-container">
+            <a class="imagen-novedades section-dos" href="./views/casual.html">
+                <img class="novedades" src="Imagenes/novedades.png" alt="novedades">
+            </a>
+            <a class="imagen-disciplinas section-dos" href="./views/deportes.html">
+                <img class="disciplinas" src="Imagenes/disciplinas.png" alt="disciplinas">
+            </a>
+        </div>
+    </section>
+    <!-- Final Section dos -->
+    <!-- Section tres -->
+    <section class="section-marcas">
+        <div class="contenedor-marcas">
+            <h2 class="subtitulo-marcas">Marcas</h2>
+            <div class="grupo-marcas">
+                <img class="adidas" src="Imagenes/logos-marcas/adidas.png" alt="logo adidas">
+                <img class="jordan" src="Imagenes/logos-marcas/jordan.png" alt="logo jordan">
+                <img class="nike" src="Imagenes/logos-marcas/nike.png" alt="logo nike">
+                <img class="reebok" src="Imagenes/logos-marcas/reebok.png" alt="logo reebok">
+                <img class="puma" src="Imagenes/logos-marcas/puma.png" alt="logo puma">
+                <img class="new-balance" src="Imagenes/logos-marcas/new-balance.png" alt="logo new balance">
+            </div>
+        </div>
+    </section>
+    <!-- Section cuatro -->
+    <section class="whatsapp">
+        <a href="https://api.whatsapp.com/send/?phone=5491165630550&text&app_absent=0">
+            <img class="whatsapp" src="./Imagenes/LogoRRSS/whatsapp.webp" alt="whatsapp">
+        </a>
+    </section>
+    <!-- Fin Section cuatro -->
+    <!-- Inicio Footer -->
+    <footer>
+        <p class="suscripcion-footer">Suscribete y se el primero en recibir nuestras ofertas y promociones:</p>
+        <form class="form-footer">
+            <input type="email" required>
+            <input type="submit" value="Registrarse">
+        </form>
+        <div class="ubicacion">
+            <div class="direccion">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="parrafo-direccion">Ameghino 428, Buenos Aires</p>
+            </div>
+            <div class="mail">
+                <i class="fas fa-envelope"></i>
+                <p class="parrafo-mail">contacto@shoesmarket.com</p>
+            </div>
+        </div>
+        <div class="redes">
+            <a href="https://es-la.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="copyrights">&copy;2021 Yesi Guillent</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
