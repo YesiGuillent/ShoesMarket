@@ -14,6 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@700&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="../style.css">
 
@@ -23,74 +28,118 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <img class="logo" src="../Imagenes/logoshoesmarket/logo-shoes-market.webp" alt="Logo Shoes Market">
-            <h1 class="nombre-tienda">Shoes Market</h1>
-            <ul class="menu-container" id="menu">
-                <li class="clase-inline inicio"><a href="../index.html">Inicio</a></li>
-                <li class="clase-inline Casual"><a href="../views/casual.html">Casual</a></li>
-                <li class="clase-inline futbol"><a href="../views/futbol.html">Fútbol</a></li>
-                <li class="clase-inline running"><a href="../views/running.html">Running</a></li>
-            </ul>   
-            <div class="menu-bar" id="menu-bar">
-                <i class="fas fa-bars" style="color:white"></i>
-            </div>
-            <div class="shopping">
-                <i class="fas fa-shopping-cart"></i>
+        <nav class="navbar navbar-expand-lg navbar-light bg-header">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Imagenes/logoshoesmarket/logo-shoes-market.webp" alt="Logo ShoesMarket" width="55" height="55" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler boton-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row" id="navbarNav">
+                    <h1 class="nombre-tienda">Shoes Market</h1>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="text" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="text" href="../views/casual.html">Casual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="text" href="../views/futbol.html">Futbol</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="text" href="../views/running.html">Running</a>
+                        </li>
+                        <form class="container-fluid justify-content-start">
+                            <button class="btn" id="boton-compra" type="button">Comprar</button>
+                        </form>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    <!-- Section uno -->
-    <section class="page-principio">
-        <h2 class="subtitulos">Baloncesto</h2>
+    <!-- Titulo pagina -->
+    <section class="container-fluid page-casual">
+        <h2 class="col subtitulo text-center">Baloncesto</h2>
+    </section>
+    <!-- Fin titulo pagina -->
+    <!-- Inicio Video -->
         <div class="video">
             <iframe width="100%" height="415" src="https://www.youtube-nocookie.com/embed/UbpuZCB3x9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <section class="primera-section">
-            <h3 class="categorias-zapatillas">Zapatillas</h3>
-            <div class="bloque-zapatillas" clase-inline">
-                <div class="box-producto">
-                    <img class="imagen-producto" src="../Imagenes/Baloncesto/zapatos/kd14-nikeBL.jpg" alt="Zapatillas Kevin Duran">
-                    <p class="nombre-productos"><strong>Zapatillas Kevin Duran 14 - Nike</strong></p>
-                    <p class="descripcion-productos">Las KD14 están diseñadas para ayudar a los jugadores versátiles e implacables como KD a mantener la frescura durante todo el partido.</p>
-                    <p class="precio-productos"><strong>$45500</strong></p> 
-                </div>
-                <div class="box-producto">
-                    <img class="imagen-producto" src="../Imagenes/Baloncesto/zapatos/lebron-18-nikeBL.png" alt="Zapatillas LeBron">
-                    <p class="nombre-productos"><strong>Zapatillas LeBron 18 - Nike </strong></p>
-                    <p class="descripcion-productos">Las LeBron 18 se han diseñado para que saque el máximo partido a sus habilidades y reduzca el estrés al que somete su cuerpo.</p>
-                    <p class="precio-productos"><strong>$52000</strong></p> 
-                </div>
-                <div class="box-producto" clase-inline">
-                    <img class="imagen-producto" src="../Imagenes/Baloncesto/zapatos/air-jordan-14-retro-se-nikeBT.jpg" alt="Zapatillas Jordan">
-                    <p class="nombre-productos"><strong>Zapatillas Jordan Retro 14 - Nike</strong></p>
-                    <p class="descripcion-productos">Regresa a los inicios de los 2000 con esta combinación de colores clásica. ¿preparado para esta temporada?</p>
-                    <p class="precio-productos"><strong>$50800</strong></p> 
+    <!-- Fin video -->
+    <!-- Inicio sección zapatillas -->
+    <section class="container-fluid">  
+        <div class="row bg-categorias">  
+            <h3 class="col text-center">Zapatillas</h3>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Baloncesto/zapatos/kd14-nikeBL.jpg" alt="Zapatillas Kevin Duran">
+                <div class="card-body">
+                    <p class="card-title"><strong>Zapatillas Kevin Duran 14 - Nike</strong></p>
+                    <p class="card-text">Las KD14 están diseñadas para ayudar a los jugadores versátiles e implacables como KD a mantener la frescura durante todo el partido.</p>
+                    <p class="card-text"><strong>$45500</strong></p> 
                 </div>
             </div>
-            <h3 class="categorias-indumentaria">Indumentaria</h3>
-            <div class="bloque-indumentaria">
-                <div class="box-producto clase-inline">
-                    <img class="imagen-producto" src="../Imagenes/Baloncesto/indumentaria/jordan-jumpman-nikeBL.jpg" alt="Jumpman - Jordan">
-                    <p class="nombre-productos"><strong>Muñequeras - Jordan</strong></p>
-                    <p class="descripcion-productos">Las muñequeras Jordan Jumpman están confeccionadas con un tejido elástico y absorbente que ayuda a retener el sudor.</p>
-                    <p class="precio-productos"><strong>$2300</strong></p>
-                </div>
-                <div class="box-producto clase-inline">
-                    <img class="imagen-producto" src="../Imagenes/Baloncesto/indumentaria/Pantalon_corto_Allen_Iverson_I3_Mesh_reebokBL.jpg" alt="ShortIverson Mesh">
-                    <p class="nombre-productos"><strong>Short Iverson I3 Mesh - Reebok</strong></p>
-                    <p class="descripcion-productos">Luce todos los detalles del baloncesto original que te gustan con este pantalón corto. La malla transpirable mantiene tu piel fresca.</p>
-                    <p class="precio-productos"><strong>$10500</strong></p>
-                </div>
-                <div class="box-producto clase-inline">
-                    <img class="imagen-producto" src="../Imagenes/Baloncesto/indumentaria/Camiseta_Iverson_reebokBL.jpg" alt="Musculosa Iverson">
-                    <p class="nombre-productos"><strong>Musculosa Allen Iverson- Reebok</strong></p>
-                    <p class="descripcion-productos">Camiseta con el logo I3 de Iverson y el Reebok Vector, reversible para hombre. Combínala con tu actitud y llévala de dos maneras distintas.</p>
-                    <p class="precio-productos"><strong>$9990</strong></p>
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Baloncesto/zapatos/lebron-18-nikeBL.png" alt="Zapatillas LeBron">
+                <div class="card-body">
+                    <p class="card-title"><strong>Zapatillas LeBron 18 - Nike </strong></p>
+                    <p class="card-text">Las LeBron 18 se han diseñado para que saque el máximo partido a sus habilidades y reduzca el estrés al que somete su cuerpo.</p>
+                    <p class="card-text"><strong>$52000</strong></p> 
                 </div>
             </div>
-        </section>
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Baloncesto/zapatos/air-jordan-14-retro-se-nikeBT.jpg" alt="Zapatillas Jordan">
+                <div class="card-body">
+                    <p class="card-title"><strong>Zapatillas Jordan Retro 14 - Nike</strong></p>
+                    <p class="card-text">Regresa a los inicios de los 2000 con esta combinación de colores clásica. ¿preparado para esta temporada?</p>
+                    <p class="card-text"><strong>$50800</strong></p> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Final sección zapatillas -->
+    <!-- Inicio sección indumentaria -->
+    <section class="container-fluid">  
+        <div class="row bg-categorias">  
+            <h3 class="col text-center">Indumentaria</h3>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Baloncesto/indumentaria/jordan-jumpman-nikeBL.jpg" alt="Jumpman - Jordan">
+                <div class="card-body">
+                    <p class="card-title"><strong>Muñequeras - Jordan</strong></p>
+                    <p class="card-text">Las muñequeras Jordan Jumpman están confeccionadas con un tejido elástico y absorbente que ayuda a retener el sudor.</p>
+                    <p class="card-text"><strong>$2300</strong></p>
+                </div>
+            </div>
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Baloncesto/indumentaria/Pantalon_corto_Allen_Iverson_I3_Mesh_reebokBL.jpg" alt="ShortIverson Mesh">
+                <div class="card-body">
+                    <p class="card-tittle"><strong>Short Iverson I3 Mesh - Reebok</strong></p>
+                    <p class="card-text">Luce todos los detalles del baloncesto original que te gustan con este pantalón corto. La malla transpirable mantiene tu piel fresca.</p>
+                    <p class="card-text"><strong>$10500</strong></p>
+                </div>
+            </div>
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Baloncesto/indumentaria/Camiseta_Iverson_reebokBL.jpg" alt="Musculosa Iverson">
+                <div class="card-body">
+                    <p class="card-tittle"><strong>Musculosa Allen Iverson- Reebok</strong></p>
+                    <p class="card-text">Camiseta con el logo I3 de Iverson y el Reebok Vector, reversible para hombre. Combínala con tu actitud y llévala de dos maneras distintas.</p>
+                    <p class="card-text"><strong>$9990</strong></p>
+                </div>
+            </div>
+        </div>
     </section> 
+    <!-- Final sección indumentaria -->
+    <!-- Inicio footer -->
     <footer>
         <p class="suscripcion-footer">Suscribete y se el primero en recibir nuestras ofertas y promociones:</p>
         <form class="form-footer">
@@ -113,7 +162,8 @@
             <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
         </div>
         <p class="copyrights">&copy;2021 Yesi Guillent</p>
+        <!-- Fin footer -->
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- Fonts de google -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
-     
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@700&display=swap" rel="stylesheet">
+    <!-- Fonts de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../style.css">
@@ -22,76 +27,120 @@
     <title>Shoes Market</title>
 </head>
 <body>
+    <!-- Inicio del header -->
     <header>
-        <nav class="navbar">
-            <img class="logo" src="../Imagenes/logoshoesmarket/logo-shoes-market.webp" alt="Logo Shoes Market">
-            <h1 class="nombre-tienda">Shoes Market</h1>
-            <ul class="menu-container" id="menu">
-                <li class="clase-inline inicio"><a href="../index.html">Inicio</a></li>
-                <li class="clase-inline Casual"><a href="../views/casual.html">Casual</a></li>
-                <li class="clase-inline futbol"><a href="../views/futbol.html">Fútbol</a></li>
-                <li class="clase-inline baloncesto"><a href="../views/baloncesto.html">Baloncesto</a></li>
-            </ul>   
-            <div class="menu-bar" id="menu-bar">
-                <i class="fas fa-bars" style="color:white"></i>
-            </div>
-            <div class="shopping">
-                <i class="fas fa-shopping-cart"></i>
+        <nav class="navbar navbar-expand-lg navbar-light bg-header">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Imagenes/logoshoesmarket/logo-shoes-market.webp" alt="Logo ShoesMarket" width="55" height="55" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler boton-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row" id="navbarNav">
+                    <h1 class="nombre-tienda">Shoes Market</h1>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="text" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="text" href="../views/casual.html">Casual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="text" href="../views/futbol.html">Futbol</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="text" href="../views/baloncesto.html">Baloncesto</a>
+                        </li>
+                        <form class="container-fluid justify-content-start">
+                            <button class="btn" id="boton-compra" type="button">Comprar</button>
+                        </form>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    <!-- Section uno -->
-    <section class="page-principio">
-        <h2 class="subtitulos">Running</h2>
-        <div class="playlist-running">
-            <p class="playlist">Escucha nuestro <strong>Playlist for Running</strong></p>
-            <iframe src="https://open.spotify.com/embed/playlist/4SGVXDZCWItkbOgfVdGlsi?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <!-- Final Header -->
+    <!-- Playlist -->
+    <section class="container-fluid page-casual">
+        <h2 class="col subtitulo text-center">Running</h2>
+    </section>
+    <div class="playlist-running">
+        <p class="playlist">Escuchá nuestro <strong>Playlist for Running</strong></p>
+        <iframe src="https://open.spotify.com/embed/playlist/4SGVXDZCWItkbOgfVdGlsi?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <!-- Final Playlist -->
+    <!-- Sección zapatillas -->
+    <section class="container-fluid">  
+        <div class="row bg-categorias">  
+            <h3 class="col text-center">Zapatillas</h3>
         </div>
-        <section class="primera-section">
-            <h3 class="categorias-zapatillas">Zapatillas</h3>
-            <div class="bloque-zapatillas">
-                <div class="box-producto">
-                    <img class="imagen-producto" src="../Imagenes/Running/zapatillas/air-zoom-pegasus-38-shield-nikeRN.jpg" alt="Zapatilla Pegasus shield">
-                    <p class="nombre-producto"><strong>Air Zoom Pegasus Shield</strong></p>
-                    <p class="descripcion-productos">Estas Air Zoom Pegasus Shield 38 de Nike, estan confeccionadas con la espuma Nike React para proporcionarte pisadas con mayor rebote</p>
-                    <p class="precio-productos"><strong>$23000</strong></p>
-                </div>
-                <div class="box-producto clase-inline">
-                    <img class="imagen-producto" src="../Imagenes/Running/zapatillas/Ultraboost_21_Tokio_adidasRN.jpg" alt="Zapatilla Ultraboost">
-                    <p class="nombre-producto"><strong>Ultraboost 21 Tokio</strong></p>
-                    <p class="descripcion-productos">Las nuevas Ultraboost 21 estan hechas con el exclusivo Primeblue, un tejido reciclado de más alto rendimiento</p>
-                    <p class="precio-productos"><strong>$30500</strong></p>
-                </div>
-                <div class="box-producto clase-inline">
-                    <img class="imagen-producto" src="../Imagenes/Running/zapatillas/Zig_Kinetica_reebokRN.jpg" alt="Zapatilla zigkinetica">
-                    <p class="nombre-productos"><strong>Zig Kinetica</strong></p>
-                    <p class="descripcion-productos">Estas Zig Kinetica están inspirados en la exploración espacial y en las maravillas desconocidas de otros mundos</p>
-                    <p class="precio-productos"><strong>$19990</strong></p>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Running/zapatillas/air-zoom-pegasus-38-shield-nikeRN.jpg" alt="Zapatilla Pegasus shield">
+                <div class="card-body">
+                    <p class="card-title"><strong>Air Zoom Pegasus Shield</strong></p>
+                    <p class="card-text">Estas Air Zoom Pegasus Shield 38 de Nike, estan confeccionadas con la espuma Nike React para proporcionarte pisadas con mayor rebote</p>
+                    <p class="card-text"><strong>$23000</strong></p>
                 </div>
             </div>
-            <h3 class="categorias-indumentaria">Indumentaria</h3>
-            <div class="bloque-indumentaria">
-                <div class="box-producto clase-inline">
-                    <img class="imagen-producto" src="../Imagenes/Running/indumentaria/Calzas_Own_The_Run_Club_adidasRN.jpg" alt="Calzas running">
-                    <p class="nombre-productos"><strong>Calzas Own The Run Club - Adidas</strong></p>
-                    <p class="descripcion-productos">Calza para running con diseño llamativo y bolsillo para el teléfono</p>
-                    <p class="precio-productos"><strong>$11500</strong></p> 
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Running/zapatillas/Ultraboost_21_Tokio_adidasRN.jpg" alt="Zapatilla Ultraboost">
+                <div class="card-body">
+                    <p class="card-title"><strong>Ultraboost 21 Tokio</strong></p>
+                    <p class="card-text">Las nuevas Ultraboost 21 estan hechas con el exclusivo Primeblue, un tejido reciclado de más alto rendimiento</p>
+                    <p class="card-text"><strong>$30500</strong></p>
                 </div>
-                <div class="box-producto clase-inline">
-                    <img class="imagen-producto" src="../Imagenes/Running/indumentaria/Campera_Reflectante_Own_the_Run_adidasRN.jpg" alt="Campera running">
-                    <p class="nombre-productos"><strong>Campera Reflectante Own The Run Club - Adidas</strong></p>
-                    <p class="descripcion-productos">Una campera para correr bajo la lluvia y el viento</p>
-                    <p class="precio-productos"><strong>$15500</strong></p> 
+            </div>
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Running/zapatillas/Zig_Kinetica_reebokRN.jpg" alt="Zapatilla zigkinetica">
+                <div class="card-body">
+                    <p class="card-title"><strong>Zig Kinetica</strong></p>
+                    <p class="card-text">Estas Zig Kinetica están inspirados en la exploración espacial y en las maravillas desconocidas de otros mundos</p>
+                    <p class="card-text"><strong>$19990</strong></p>
                 </div>
-                <div class="box-producto clase-inline">
-                    <img class="imagen-producto" src="../Imagenes/Running/indumentaria/Running_Essentials_reebokRN.jpg" alt="Top running">
-                    <p class="nombre-productos"><strong>Sujetador de alto impacto To The Max - Puma</strong></p>
+            </div>
+        </div>
+    </section>
+    <!-- Fin sección zapatillas -->
+    <!-- Inicio sección indumentaria -->
+    <section class="container-fluid">  
+        <div class="row bg-categorias">  
+            <h3 class="col text-center">Indumentaria</h3>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Running/indumentaria/Calzas_Own_The_Run_Club_adidasRN.jpg" alt="Calzas running">
+                <div class="card-body">
+                    <p class="card-title"><strong>Calzas Own The Run Club - Adidas</strong></p>
+                    <p class="card-text">Calza para running con diseño llamativo y bolsillo para el teléfono</p>
+                    <p class="card-text"><strong>$11500</strong></p> 
+                </div>
+            </div>
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Running/indumentaria/Campera_Reflectante_Own_the_Run_adidasRN.jpg" alt="Campera running">
+                <div class="card-body">
+                    <p class="card-tittle"><strong>Campera Reflectante Own The Run Club - Adidas</strong></p>
+                    <p class="card-text">Una campera para correr bajo la lluvia y el viento</p>
+                    <p class="card-text"><strong>$15500</strong></p> 
+                </div>
+            </div>
+            <div class="card bg-card" style="width: 22rem;">
+                <img class="card-img-top" src="../Imagenes/Running/indumentaria/Running_Essentials_reebokRN.jpg" alt="Top running">
+                <div class="card-body">
+                    <p class="card-tittle"><strong>Sujetador de alto impacto To The Max - Puma</strong></p>
                     <p class="descripcion-productos">Una campera para correr bajo la lluvia y el viento</p>
                     <p class="precio-productos"><strong>$7800</strong></p> 
                 </div>
             </div>
-        </section>
+        </div>
     </section>
+    <!-- Fin sección indumentaria -->
+    <!-- Inicio footer -->
     <footer>
         <p class="suscripcion-footer">Suscribete y se el primero en recibir nuestras ofertas y promociones:</p>
         <form class="form-footer">
@@ -114,6 +163,8 @@
             <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
         </div>
         <p class="copyrights">&copy;2021 Yesi Guillent</p>
+        <!-- Final footer -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

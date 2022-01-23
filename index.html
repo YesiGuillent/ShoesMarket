@@ -15,6 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@700&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -25,82 +30,115 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <img class="logo" src="./Imagenes/logoshoesmarket/logo-shoes-market.webp" alt="Logo Shoes Market">
-            <h1 class="nombre-tienda">Shoes Market</h1>
-            <ul class="menu-container" id="menu">
-                <li class="clase-inline casual"><a href="./views/casual.html">Casual</a></li>
-                <li class="clase-inline running"><a href="./views/running.html">Running</a></li>
-                <li class="clase-inline futbol"><a href="./views/futbol.html">Fútbol</a></li>
-                <li class="clase-inline baloncesto"><a href="./views/baloncesto.html">Baloncesto</a></li>
-            </ul>
-            <div class="menu-bar" id="menu-bar">
-                <i class="fas fa-bars" style="color:white"></i>
-            </div>
-            <div class="shopping">
-                <i class="fas fa-shopping-cart"></i>
+        <nav class="navbar navbar-expand-lg navbar-light bg-header">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./Imagenes/logoshoesmarket/logo-shoes-market.webp" alt="Logo ShoesMarket" width="55" height="55" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler boton-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row" id="navbarNav">
+                    <h1 class="nombre-tienda">Shoes Market</h1>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="text" aria-current="page" href="./views/casual.html">Casual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="text" href="./views/futbol.html">Futbol</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="text" href="./views/running.html">Running</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="text" href="./views/baloncesto.html">Baloncesto</a>
+                        </li>
+                        <form class="container-fluid justify-content-start">
+                            <button class="btn" id="boton-compra" type="button">Comprar</button>
+                        </form>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <!-- Inicio Slider -->
-    <section class="slider-section">
-        <h2 class="subtitulos">Ofertas de la semana</h2>
-        <div class="bloque-slider">
-            <ul class="lista-slider">
-                <li id="slider-adidas">
-                    <img src="Imagenes/adidasoferta.png" alt="oferta adidas">
-                </li>
-                <li id="slider-jordan">
-                    <img src="Imagenes/jordanoferta.png" alt="oferta jordan">
-                </li>
-                <li id="slider-nike">
-                    <img src="Imagenes/nikeoferta.png" alt="oferta nike">
-                </li>
-                <li id="slider-reebok">
-                    <img src="Imagenes/reebokoferta.png" alt="oferta reebok">
-                </li>
-            </ul>
-            <ul class="slider-menu">
-                <li>
-                    <a href="#slider-adidas">Adidas</a>
-                </li>
-                <li>
-                    <a href="#slider-jordan">Jordan</a>
-                </li>
-                <li>
-                    <a href="#slider-nike">Nike</a>
-                </li>
-                <li>
-                    <a href="#slider-reebok">Reebok</a>
-                </li>
-            </ul>
+    <!-- Inicio Carousel -->
+    <div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Imagenes/jordanoferta.png" class="d-block w-100 img-carousel" id="tamaño" alt="Oferta Jordan" width="500px" height="auto">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Jordan 1 Retro</h2>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imagenes/nikeoferta.png" class="d-block w-100 img-carousel" alt="Oferta Nike" width="500px" height="auto">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Nike de oferta</h2>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imagenes/reebokoferta.png" class="d-block w-100 img-carousel" alt="Oferta Reebok">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Oferta de reebok</h2>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imagenes/adidasoferta.png" class="d-block w-100 img-carousel" alt="Oferta Adidas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Oferta de Adidas</h2>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </section>
-    <!-- Final Slider -->
+    </div>
+    <!-- Final Carousel -->
     <!-- Section dos -->
-    <section class="section-dos-index">
-        <div class="section-dos-container">
-            <a class="imagen-novedades section-dos" href="./views/casual.html">
-                <img class="novedades" src="Imagenes/novedades.png" alt="novedades">
-            </a>
-            <a class="imagen-disciplinas section-dos" href="./views/deportes.html">
-                <img class="disciplinas" src="Imagenes/disciplinas.png" alt="disciplinas">
-            </a>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="d-flex flex-wrap justify-content-center bd-highlight mb-2">
+                <a href="./views/casual.html">
+                    <img class="novedades col" src="Imagenes/novedades.png" alt="novedades">
+                </a>
+                <a href="./views/deportes.html">
+                    <img class="disciplinas col" src="Imagenes/disciplinas.png" alt="disciplinas">
+                </a>
+            </div>
         </div>
     </section>
     <!-- Final Section dos -->
     <!-- Section tres -->
-    <section class="section-marcas">
-        <div class="contenedor-marcas">
-            <h2 class="subtitulo-marcas">Marcas</h2>
-            <div class="grupo-marcas">
-                <img class="adidas" src="Imagenes/logos-marcas/adidas.png" alt="logo adidas">
-                <img class="jordan" src="Imagenes/logos-marcas/jordan.png" alt="logo jordan">
-                <img class="nike" src="Imagenes/logos-marcas/nike.png" alt="logo nike">
-                <img class="reebok" src="Imagenes/logos-marcas/reebok.png" alt="logo reebok">
-                <img class="puma" src="Imagenes/logos-marcas/puma.png" alt="logo puma">
-                <img class="new-balance" src="Imagenes/logos-marcas/new-balance.png" alt="logo new balance">
+    <section>
+        <div class="container">
+            <div class="row">
+                <h3 class="col text-center subtitulo">Marcas</h3>
+            </div>
+            <div class="row gx-2 grupo-marcas flex-wrap">
+                <img class="adidas col" src="Imagenes/logos-marcas/adidas.png" alt="logo adidas">
+                <img class="jordan col" src="Imagenes/logos-marcas/jordan.png" alt="logo jordan">
+                <img class="nike col" src="Imagenes/logos-marcas/nike.png" alt="logo nike">
+                <img class="reebok col" src="Imagenes/logos-marcas/reebok.png" alt="logo reebok">
+                <img class="puma col" src="Imagenes/logos-marcas/puma.png" alt="logo puma">
+                <img class="new-balance col" src="Imagenes/logos-marcas/new-balance.png" alt="logo new balance">
             </div>
         </div>
     </section>
@@ -135,7 +173,7 @@
         </div>
         <p class="copyrights">&copy;2021 Yesi Guillent</p>
     </footer>
-    <script src="./js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>

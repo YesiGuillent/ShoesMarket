@@ -7,9 +7,41 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #EEEEEE;
+    background-color: #ECECEC;
+    color: #fff;
 }
 /* Inicio Header */
+#bg-header{
+    background-color: #001523;
+    width: auto;
+}
+.nombre-tienda{
+    color: #fff;
+    margin-top: 0%;
+    font-family: 'Mitr', sans-serif;
+}
+#text{
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.2em;
+}
+#tamaño{
+    width: 400px;
+}
+#boton-menu{
+    background-color: #CC031D;
+    color: #fff;
+}
+#boton-compra{
+    background-color: #CC031D;
+    font-family: 'Mulish', sans-serif;
+    margin: 0 0 0 25px;
+    color: #fff;
+}
+#boton-compra:hover{
+    color: #001523;
+    background-color: #FA163F;
+}
 .fas, .fab{
     color: #fff;
     font-size: 1.2em;
@@ -23,161 +55,29 @@ body header nav{
     'logo nombre-tienda menu-container shopping'; 
     align-items: center;
 }
-
-
-.logo{
-    display: grid;
-    width: 70px;
-    grid-area: logo;
-    margin-left: auto;
-}
-.nombre-tienda{
-    grid-area: nombre-tienda;
-    color: #fff;
-    font-family: 'Mitr', sans-serif;
-    font-weight: 900;
-    font-size: 2rem;
-    margin-top: 3%;
-    display: flex;
-    justify-content: center;
-}
-.menu-container{
-    grid-area: menu-container;
-    font-family: 'Mulish', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 4%;
-}
-.navbar .menu-container a{
-    color: #fff;
-    cursor: pointer;
-}
-.menu-bar{
-    display: none;
-    grid-area: menu-bar;
-}
-.shopping{
-    grid-area: shopping;
-    margin: 20%
-}
 /* Fin de Header */
 
-/* Inicio Slider */
-.slider-section{
-    width: 100%;
-    padding: 30px 35px;
-}
-.subtitulos{
-    font-family: 'Mulish', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    color: #001523;
-    margin: 20px 0 10px 10px;
-}
-.bloque-slider{
-    margin: auto;
-    width: 800px;
-    padding: 30px;
-    background-color: #C7E2B2;
-}
-.lista-slider{
-    margin: 0 10%;
-    position: relative;
-    width: auto;
-    height: 300px;
-    display: flex;
-    box-sizing: border-box;
-}
-ul.lista-slider li{
-    position: absolute;
-    left: 25%;
-    top: 0;
-    grid-column: 2/4;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-}
-ul.lista-slider li img{
-    width: inherit;
-    height: inherit;
-}
-ul.slider-menu li:first-child {
-    opacity: 1;
-}
-ul.lista-slider li:target{
-    opacity: 1;
-}
-.slider-menu{
-    text-align: center;
-    margin: 20px;
-}
-.slider-menu li{
-    display: inline-block;
-    text-align: center;
-}
-ul.slider-menu li a{
-    display: inline-block;
-    color: #fff;
-    background-color: #001523;
-    padding: 2px;
-    width: 120px;
-    height: 25px;
-    font-size: 20px;
-    border-radius: 2%;
-}
-/* Final Slider */
 /* Inicio section dos */
-.section-dos-index{
-    width: 100%;
-    height: auto;
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-items: center;
-}
 .novedades, .disciplinas{
     width: 620px;
     padding: 0 10px; 
 }
 /* Final Section dos */
 /* Inicio Section tres */
-.section-marcas{
+.subtitulo{
     width: 100%;
-    margin: 10px 0;
-}
-.contenedor-marcas{
-    width: 100%;
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-columns: 1fr;
-    justify-content: center;
-}
-.subtitulo-marcas{
-    width: 100%;
-    grid-row: 1/2;
     font-family: 'Mulish', sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
     color: #001523;
 }
-.grupo-marcas{
-    grid-row: 2/3;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-.section-marcas .contenedor-marcas img{
+.adidas, .jordan, .reebok, .new-balance, .nike, .puma{
     width: 100px;
-    grid-row: 2/3;
-    transition: all 3s;
+    height: 100px;
 }
-.section-marcas .contenedor-marcas img:hover{
-    transform: rotate(360deg); scale: 3;
+
+.adidas:hover, .jordan:hover, .reebok:hover, .new-balance:hover, .nike:hover, .puma:hover{
+    transform: rotate(180deg); scale: -2;
 }
 /* Fin Section tres */
 /* Inicio Section cuatro */
@@ -189,83 +89,32 @@ ul.slider-menu li a{
 }
 /* Fin Section cuatro */
 /* Bloque de productos casual */
-.page-casual{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-rows: 50px, repeat(2,1fr);
-}
 .subtitulos{
-    grid-row: 1/2;
     font-family: 'Mulish', sans-serif;
     font-size: 2em;
 }
-.section-casual{
-    grid-row: 3/5;
-    background-color: rgb(240, 84, 84);
-    display: grid;
-    grid-template-rows: 50px, repeat(2,1fr), 50px repeat(2,1fr);    
+/* Section Casual */
+.bg-categorias{
+    background-color: #CC031D;
 }
-.categorias-zapatillas{
-    grid-row: 1/2;
-    font-family: 'Mulish', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-.categorias-indumentaria{
-    grid-row: 4/5;
-    background-color: rgb(240, 84, 84);
-    font-family: 'Mulish', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-.bloque-zapatillas{
-    grid-row: 2/4;
-    background-color: #fff;
-    padding: 3%;
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap:wrap-reverse
-}
-.bloque-indumentaria{
-    grid-row: 5/8;
-    background-color: #fff;
-    padding: 3%;
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap:wrap-reverse
-}
-.box-producto{
-    width: 280px;
+.bg-card{
     background-color: #001523;
-    margin: 2px;
-    transition: all 2s;
-}
-.box-producto:hover{
-    transform: scale(1.5,1.5);
+    margin: 10px;
+    padding: 10px;
 }
 .productos-casuales, .imagen-producto{
     width: 200px;
     margin: 13%;
 }
-.box-producto p{
+.bg-card:hover{
+    background-color:#CC031D;
+}
+/* Section futbol */
+.playlist{
     color: #fff;
-    text-align: center;
-}
-.page-principio{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-rows: 50px, repeat(4,1fr);
-}
-.playlist-running, .video{
-    grid-row: 2/4;
-}
-.primera-section{
-    grid-row: 4/6;
-    background-color: rgb(240, 84, 84);
-    display: grid;
-    grid-template-rows: 50px, repeat(2,1fr), 50px repeat(2,1fr);    
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5rem;
+    background-color: #CC031D;
 }
 /* Inicio Footer */
 footer{
@@ -292,7 +141,7 @@ footer input[type='email']{
     border-radius: 30px 0 0 30px;
     outline: none;
     border: none;
-    color: #F05454;
+    color: #CC031D;
 }
 footer input[type='submit']{
     outline: none;
@@ -303,10 +152,13 @@ footer input[type='submit']{
     font-weight: bold;
     font-size: 1em;
     font-family: 'Mulish', sans-serif;
-    background-color: rgb(240, 84, 84);
+    background-color: #CC031D;
     cursor: pointer;
 }
-footer input:hoover[type='submit'] {background: black;}
+footer input:hover[type='submit']{
+    color: #001523;
+    background-color: #FA163F;
+}
 .ubicacion{
     width: 50%;
     display: flex;
@@ -329,96 +181,16 @@ footer input:hoover[type='submit'] {background: black;}
     padding: 20px;
 }
 .redes i:hover{
-    color: rgb(240, 84, 84);
+    color: #CC031D;
 }
 /* Fin Footer */
 
 /* Media Query */
-/* Header */
-@media only screen and (max-width:1024px){
-    body header nav{
-        width: 100%;
-        background-color: #001523;
-        display: grid;
-        grid-template-columns: 75% 25%;
-        grid-template-areas: 
-        'nombre-tienda menu-bar';
-    }
-    .navbar{
-        position: relative;
-    }
-    .nombre-tienda{
-    text-align:left;
-    }
-    .shopping{
-        display: none;
-    }
-    .menu-bar{
-        display: block;
-        text-align: center;
-        font-size: 2em;
-        cursor: pointer;
-    }
-    .logo{
-        display: none; 
-    }
-    .menu-container{
-        position: absolute;
-        width: 100%;
-        height: 70vh;
-        display: grid;
-        align-items: center;
-        background-color: coral;
-        margin-top: 150%;
-        transform: translateX(210%);
-        transition: all 1s;
-    }
-    .navbar .menu-container-toggle{
-        transform: translateX(33%)
-    }
-    /* Slider */
-    .bloque-slider{
-        margin: auto;
-        width: auto;
-        padding: 30px;
-        background-color: #C7E2B2;
-    }
-    .lista-slider{
-        display: none;
-    }
-    .slider-menu{
-        width: auto;
-        display: flex;
-        flex-flow: column wrap;
-        margin: 20px;
-    }
-    ul.slider-menu li a{
-        display: inline-block;
-        margin: 2px;
-        width: auto;
-    }
-    /* Seccion dos */
-    .novedades, .disciplinas{
-        width: 200px;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 10px; 
-    }
-    .section-marcas .contenedor-marcas img{
-        width: 50px;
-    }
-    .section-dos-index{
-        height: auto;
-    }
-    /* Seccion Cuatro */
+
+/* Seccion Cuatro */
+@media only screen and (max-width:480px){
     .whatsapp{
         display: none;
-    }
-    .bloque-zapatillas{
-        grid-template-columns: repeat(3,1fr);
-        column-gap: 10px;
-        grid-template-rows: 130px 1fr;
-        background: #C7E2B2;
     }
     /* Footer */
     .suscripcion-footer,footer input[type='email'],footer input[type='submit']{
@@ -427,15 +199,5 @@ footer input:hoover[type='submit'] {background: black;}
     .ubicacion{
         padding: 10px;
         font-size: 12px;
-    }
-}
-@media only screen and (max-width:480px){
-    .menu-container{
-    margin-top: 300%;
-    }
-}
-@media only screen and (min-width:481px) and (max-width:850px){
-    .menu-container{
-    margin-top: 215%;
     }
 }
