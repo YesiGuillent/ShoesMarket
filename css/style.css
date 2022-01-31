@@ -1,0 +1,150 @@
+/* Variables generales*/
+/*Reset*/
+/* Header */
+header {
+  width: 100%;
+}
+header .bg-header {
+  background-color: #001523;
+}
+header .bg-header div button {
+  background-color: #CC031D;
+  color: #fff;
+}
+header .bg-header div div h1 {
+  color: #fff;
+  margin-top: 0%;
+  font-family: "Mitr", sans-serif;
+}
+header .bg-header div div ul li #text {
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.2em;
+}
+
+/*Main Index*/
+.carousel-inner div .img-carousel {
+  height: 100vh;
+}
+.novedades, .disciplinas {
+  width: 620px;
+  padding: 10px;
+}
+
+.adidas, .jordan, .nike, .reebok, .puma, .new-balance {
+  height: 100px;
+}
+
+.whatsapp {
+  width: 50px;
+  position: fixed;
+  bottom: 0px;
+  right: 30px;
+}
+
+/* Titulo de pagina*/
+.subtitulo {
+  font-family: "Mulish", sans-serif;
+  font-size: 3.5rem;
+  margin: 10px;
+}
+
+/* Categoria de pagina*/
+.bg-categorias {
+  background-color: #CC031D;
+  color: #fff;
+}
+
+.bg-card {
+  background-color: #001523;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.bg-card:hover {
+  background-color: #CC031D;
+}
+.bg-card div p {
+  color: #fff;
+}
+
+.carousel-inner div div h2 {
+  color: #11468F;
+  font-family: "Mulish", sans-serif;
+  font-size: 45px;
+}
+
+.carousel-inner div div p {
+  color: #F3950D;
+  font-family: "Mulish", sans-serif;
+  font-size: 30px;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #ECECEC;
+}
+
+/* Footer*/
+footer {
+  background-color: #001523;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  padding: 20px;
+}
+footer .suscripcion-footer {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+footer form .email {
+  width: 60vw;
+  font-size: 1em;
+  font-family: "Mulish", sans-serif;
+  padding: 10px;
+  border-radius: 30px 0 0 30px;
+  outline: none;
+  border: none;
+  color: #CC031D;
+}
+footer form .registro {
+  outline: none;
+  border: none;
+  border-radius: 0 30px 30px 0;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: "Mulish", sans-serif;
+  background-color: #CC031D;
+  cursor: pointer;
+}
+footer form .registro:hover {
+  background-color: #810212;
+}
+footer .ubicacion .direccion {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+footer .ubicacion .mail {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+footer .redes .fab {
+  color: #fff;
+  margin: 2px;
+}
+footer .redes .fab:hover {
+  color: #CC031D;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+/*Main Index*/
+.carousel-inner{
+    div {
+        .img-carousel {
+            height: 100vh;
+        }
+        div{
+            h2{
+                @extend %titulo-carousel;
+            }
+            p {
+                @extend %texto-carousel;
+
+            }
+        }
+
+    }
+}
+.novedades, .disciplinas {
+    width: 620px;
+    padding: 10px; 
+}
+.adidas, .jordan, .nike, .reebok, .puma, .new-balance {
+    height: $imagen-logos;
+}
+.whatsapp {
+    width: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+}

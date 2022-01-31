@@ -1,0 +1,27 @@
+/* Titulo de pagina*/
+.subtitulo {
+    font-family: 'Mulish', sans-serif;
+    font-size: $font-subtitulos;
+    margin: 10px;
+}
+/* Categoria de pagina*/
+    .bg-categorias {
+        background-color: $bg-color-secundario;
+        color: $color-font;
+    }
+
+    .bg-card{
+        background-color: $bg-color;
+        margin: 10px;
+        padding: 10px;
+        cursor:pointer;
+
+        &:hover {
+            background-color: $bg-color-secundario;
+        }
+        div {
+            p {
+                color: $color-font;
+            }
+        }
+    }

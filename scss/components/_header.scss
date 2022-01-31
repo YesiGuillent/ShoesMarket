@@ -1,0 +1,29 @@
+/* Header */
+header {
+    width: 100%;
+    .bg-header {
+        background-color: $bg-color;
+        div {
+            button{
+                background-color: $bg-color-secundario;
+                color: $color-font;
+            }
+            div {
+                h1{
+                    color: #fff;
+                    margin-top: 0%;
+                    font-family: 'Mitr', sans-serif;
+                }
+            ul{
+                li{
+                    #text{
+                        color: #fff;
+                        font-family: 'Mulish', sans-serif;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
