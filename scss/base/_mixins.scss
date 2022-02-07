@@ -1,0 +1,8 @@
+/* Mixin */
+@mixin boton ($width, $color, $radius, $border) {
+    width: $width;
+    background-color: $color;
+    border-radius: $radius;
+    border: $border;
+}
+

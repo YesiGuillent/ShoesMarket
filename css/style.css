@@ -1,5 +1,6 @@
 /* Variables generales*/
 /*Reset*/
+/* Mixin */
 /* Header */
 header {
   width: 100%;
@@ -42,6 +43,7 @@ header .bg-header div div ul li #text {
   right: 30px;
 }
 
+/* Mixin */
 /* Titulo de pagina*/
 .subtitulo {
   font-family: "Mulish", sans-serif;
