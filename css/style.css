@@ -8,32 +8,81 @@ header {
 header .bg-header {
   background-color: #001523;
 }
+header .bg-header div a img {
+  width: 120px;
+  height: 120px;
+}
 header .bg-header div button {
   background-color: #CC031D;
   color: #fff;
 }
-header .bg-header div div h1 {
+header .bg-header div div .nombre-tienda {
   color: #fff;
-  margin-top: 0%;
+  margin-bottom: 0%;
   font-family: "Mitr", sans-serif;
+  font-size: 3.5em;
+  text-decoration: none;
+}
+header .bg-header div div .descripcion-site {
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  font-size: 1.5em;
 }
 header .bg-header div div ul li #text {
   color: #fff;
   font-family: "Mulish", sans-serif;
   font-size: 1.2em;
 }
+header .bg-header div div ul li #text:hover {
+  color: #CC031D;
+}
 
 /*Main Index*/
 .carousel-inner div .img-carousel {
-  height: 100vh;
+  height: 90vh;
+  width: auto;
+  /*Media Query Carousel*/
 }
-.novedades, .disciplinas {
+@media screen and (max-width: 768px) {
+  .carousel-inner div .img-carousel {
+    height: 65vh;
+    width: auto;
+  }
+}
+.zapatillas, .indumentaria {
   width: 620px;
   padding: 10px;
+  /*Media Query Carousel*/
+}
+@media screen and (max-width: 575px) {
+  .zapatillas, .indumentaria {
+    width: 170px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .zapatillas, .indumentaria {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .zapatillas, .indumentaria {
+    width: 500px;
+  }
+}
+
+.container {
+  margin-bottom: 50px;
 }
 
 .adidas, .jordan, .nike, .reebok, .puma, .new-balance {
   height: 100px;
+  /*Media Query section tres*/
+}
+@media screen and (max-width: 980px) {
+  .adidas, .jordan, .nike, .reebok, .puma, .new-balance {
+    height: 60px;
+  }
 }
 
 .whatsapp {
@@ -64,20 +113,44 @@ header .bg-header div div ul li #text {
   cursor: pointer;
 }
 .bg-card:hover {
-  background-color: #CC031D;
+  background-color: #ffddd2;
+}
+.bg-card:hover div p {
+  color: #001523;
 }
 .bg-card div p {
   color: #fff;
 }
-
-.carousel-inner div div h2 {
-  color: #11468F;
-  font-family: "Mulish", sans-serif;
-  font-size: 45px;
+.bg-card #talles {
+  width: 55%;
+  align-self: center;
+}
+.bg-card #talles-casual {
+  width: 78%;
+  align-self: center;
+}
+.bg-card #btn-box {
+  width: 80%;
+}
+.bg-card #btn-box-casual {
+  width: 90%;
 }
 
-.carousel-inner div div p {
-  color: #F3950D;
+.carousel-inner div h2 {
+  color: #E9E5D6;
+  font-family: "Mulish", sans-serif;
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+.carousel-inner div p {
+  color: #ECECEC;
+  font-family: "Mulish", sans-serif;
+  font-size: 30px;
+}
+
+.carousel-inner div .texto-oferta-nike {
+  color: #FDEBF7;
   font-family: "Mulish", sans-serif;
   font-size: 30px;
 }
@@ -86,6 +159,21 @@ body {
   margin: 0%;
   padding: 0%;
   background-color: #ECECEC;
+}
+
+.bg-card #talles, .bg-card #talles-casual {
+  font-family: "Mulish", sans-serif;
+  color: #001523;
+  border: none;
+  margin-bottom: 1px;
+}
+
+.bg-card #btn-box, .bg-card #btn-box-casual {
+  align-self: center;
+  background-color: #CC031D;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Mulish", sans-serif;
 }
 
 /* Footer*/
@@ -134,6 +222,15 @@ footer .ubicacion .direccion {
   flex-flow: row wrap;
   justify-content: space-evenly;
   margin-top: 10px;
+}
+footer .ubicacion .direccion a, footer .ubicacion .direccion .parrafo-mail {
+  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 5px;
+  color: #fff;
+}
+footer .ubicacion .direccion a:hover, footer .ubicacion .direccion .parrafo-mail:hover {
+  color: #CC031D;
 }
 footer .ubicacion .mail {
   display: flex;

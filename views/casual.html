@@ -34,13 +34,13 @@
     <meta property="og:description" content="Consigue todo lo que necesitas de tus marcas favoritas. Zapatillas, camperas, short, joggings Adidas, Reebok, Puma, New Balance">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./Imagenes/logoshoesmarket/logo-shoes-market.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Imagenes/logoshoesmarket/logo-shoes-market.ico" type="image/x-icon">
     
     <title>Shoes Market - Zapatillas e indumentaria casual</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-header">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../Imagenes/logoshoesmarket/logo-shoes-market.webp" alt="Logo ShoesMarket" width="55" height="55" class="d-inline-block align-text-top">
@@ -49,10 +49,16 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse flex-row" id="navbarNav">
-                    <h1 class="nombre-tienda">Shoes Market</h1>
+                    <div>
+                        <a class="nombre-tienda" href="../index.html">Shoes Market</a>
+                        <h1 class="descripcion-site">Tienda Deportiva</h1>
+                    </div>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" id="text" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="text" href="../views/casual.html">Casual</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="text" href="../views/futbol.html">Futbol</a>
@@ -86,14 +92,30 @@
                     <p class="card-text">Lucí tu estilo y actitud con orgullo con este modelo de la colección Pride.</p>
                     <p class="card-text"><strong>$11000</strong></p>
                 </div>
+                    <select class="form-select form-select-sm" id="talles-casual" aria-label="Small select">
+                        <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                        <option value="1">37</option>
+                        <option value="2">39</option>
+                        <option value="3">42</option>
+                        <option value="4">43</option>
+                    </select>
+                    <button type="button" class="btn btn-primary btn-sm" id="btn-box-casual">Seleccionar</button>                    
             </div>
             <div class="card bg-card" style="width: 16rem;">
                 <img class="card-img-top" src="../Imagenes/Casual/zapatos/Samba_adidasCS.jpg" alt="Zapatillas Samba Adidas">
                 <div class="card-body">
-                    <p class="card-tittle"><strong>Zapatillas Samba - Adidas</strong></p>
+                    <p class="card-tittle"><strong>Zapatillas Samba Classic - Adidas</strong></p>
                     <p class="card-text">Un clásico de las canchas de fútbol reimaginado para el skateboarding.</p>
                     <p class="card-text"><strong>$14000</strong></p>
                 </div>
+                    <select class="form-select form-select-sm" id="talles-casual" aria-label="Small select">
+                        <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                        <option value="1">37</option>
+                        <option value="2">39</option>
+                        <option value="3">42</option>
+                        <option value="4">43</option>
+                    </select>
+                    <button type="button" class="btn btn-primary btn-sm" id="btn-box-casual">Seleccionar</button>                    
             </div>
             <div class="card bg-card" style="width: 16rem;">
                 <img class="card-img-top" src="../Imagenes/Casual/zapatos/made_UK_577_new_balance_CS.jpg" alt="Zapatillas made UK New Balance">
@@ -102,6 +124,14 @@
                     <p class="card-text">Versión premium de la zapatilla MADE UK 577 de New Balance.</p>
                     <p class="card-text"><strong>$8500</strong></p>
                 </div>
+                    <select class="form-select form-select-sm" id="talles-casual" aria-label="Small select">
+                    <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                    <option value="1">37</option>
+                    <option value="2">39</option>
+                    <option value="3">42</option>
+                    <option value="4">43</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-sm" id="btn-box-casual">Seleccionar</button>                    
             </div>
             <div class="card bg-card" style="width: 16rem;">
                 <img class="card-img-top" src="../Imagenes/Casual/zapatos/Superstar_adidasCS.jpg" alt="Zapatillas superstar">
@@ -110,6 +140,14 @@
                     <p class="card-text">Las autenticas zapatillas que representan a los amantes de la moda urbana.</p>
                     <p class="card-text"><strong>$18500</strong></p>
                 </div>
+                    <select class="form-select form-select-sm" id="talles-casual" aria-label="Small select">
+                        <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                        <option value="1">37</option>
+                        <option value="2">39</option>
+                        <option value="3">42</option>
+                        <option value="4">43</option>
+                    </select>
+                    <button type="button" class="btn btn-primary btn-sm" id="btn-box-casual">Seleccionar</button>                    
             </div>
         </div>
     </section>
@@ -125,6 +163,15 @@
                     <p class="card-text">Este buzo forma parte de la colección Shmoofolio de Mark Gonzales para adidas Skateboarding.</p>
                     <p class="card-text"><strong>$15000</strong></p>
                 </div>
+                    <select class="form-select form-select-sm" id="talles-casual" aria-label="Small select">
+                        <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="4">XL</option>
+                        <option value="4">2XL</option>
+                    </select>
+                    <button type="button" class="btn btn-primary btn-sm" id="btn-box-casual">Seleccionar</button>                    
             </div>
             <div class="card bg-card" style="width: 16rem;">
                 <img class="card-img-top" src="../Imagenes/Casual/indumentaria/campera-boca_adidasCS.jpg" alt="Campera boca">
@@ -133,14 +180,28 @@
                     <p class="card-text">Campera con las 3 Tiras de Adidas y las cuatro letras del clásico escudo de Boca Juniors.</p>
                     <p class="card-text"><strong>$11000</strong></p>
                 </div>
+                    <select class="form-select form-select-sm" id="talles-casual" aria-label="Small select">
+                        <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="4">XL</option>
+                        <option value="4">2XL</option>
+                    </select>
+                    <button type="button" class="btn btn-primary btn-sm" id="btn-box-casual">Seleccionar</button> 
             </div>
             <div class="card bg-card" style="width: 16rem;">
                 <img class="card-img-top" src="../Imagenes/Casual/indumentaria/mochila-classic-adidasCS.jpg" alt="Mochila adidas">
                 <div class="card-body">
-                    <p class="card-tittle"><strong>Mochila Classic Adicolor - Adidas</strong></p>
+                    <p class="card-tittle"><strong>Mochila Classic - Adidas</strong></p>
                     <p class="card-text">Mochila amplia con el clásico diseño de las 3 líneas de adidas. Ideal para todos llevarla a donde quieras.</p>
                     <p class="card-text"><strong>$6999</strong></p>
                 </div>
+                    <select class="form-select form-select-sm" id="talles-casual" aria-label="Small select">
+                        <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                        <option value="1">Unico</option>
+                    </select>
+                    <button type="button" class="btn btn-primary btn-sm" id="btn-box-casual">Seleccionar</button> 
             </div>
             <div class="card bg-card" style="width: 16rem;">
                 <img class="card-img-top" src="../Imagenes/Casual/indumentaria/remera-Nora_adidasCS.jpg" alt="Remera adidas">
@@ -149,10 +210,19 @@
                     <p class="card-text">Remera con el clásico logo de Adidas. Diseñada para ti en exclusiva por Nora Vasconcellos para Adidas.</p>
                     <p class="card-text"><strong>$3800</strong></p>
                 </div>
+                    <select class="form-select form-select-sm" id="talles-casual" aria-label="Small select">
+                        <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="4">XL</option>
+                        <option value="4">2XL</option>
+                    </select>
+                    <button type="button" class="btn btn-primary btn-sm" id="btn-box-casual">Seleccionar</button> 
             </div>
         </div>
     </section>
-    
+    <!-- Inicio footer -->
     <footer>
         <p class="suscripcion-footer">Suscribete y se el primero en recibir nuestras ofertas y promociones:</p>
         <form class="form-footer">
@@ -161,10 +231,8 @@
         </form>
         <div class="ubicacion">
             <div class="direccion">
-            <i class="fas fa-map-marker-alt"></i>
-            <p class="parrafo-direccion">Ameghino 428, Buenos Aires</p>               
-            </div>
-            <div class="mail">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="parrafo-direccion">Ameghino 428, Buenos Aires</p>
                 <i class="fas fa-envelope"></i>
                 <p class="parrafo-mail">contacto@shoesmarket.com</p>
             </div>
@@ -176,6 +244,7 @@
         </div>
         <p class="copyrights">&copy;2021 Yesi Guillent</p>
     </footer>
+    <!-- Fin footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

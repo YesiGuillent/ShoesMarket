@@ -19,11 +19,32 @@
         cursor:pointer;
         
         &:hover {
-            background-color: $bg-color-secundario;
+            background-color: $bg-hoover;
+            div p {
+                color: $color-font-hoover
+            }
         }
         div {
             p {
                 color: $color-font;
             }
+        }
+        #talles{
+            @extend %opcion-talles;
+            width: 55%;
+            align-self: center;
+        }
+        #talles-casual{
+            @extend %opcion-talles;
+            width: 78%;
+            align-self: center;
+        }
+        #btn-box {
+            @extend %boton-seleccionar;
+            width: 80%;
+        }
+        #btn-box-casual {
+            @extend %boton-seleccionar;
+            width: 90%;
         }
     }

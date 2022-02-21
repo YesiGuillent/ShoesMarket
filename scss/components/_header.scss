@@ -4,15 +4,29 @@ header {
     .bg-header {
         background-color: $bg-color;
         div {
+            a{
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
             button{
                 background-color: $bg-color-secundario;
                 color: $color-font;
             }
             div {
-                h1{
+                .nombre-tienda{
                     color: #fff;
-                    margin-top: 0%;
+                    margin-bottom: 0%;
                     font-family: 'Mitr', sans-serif;
+                    font-size: $font-name;
+                    text-decoration: none;
+                }
+                .descripcion-site{
+                    color: #fff;
+                    font-family: 'Mulish', sans-serif;
+                    text-align: center;
+                    font-size: $font-categorias;
                 }
             ul{
                 li{
@@ -20,6 +34,9 @@ header {
                         color: #fff;
                         font-family: 'Mulish', sans-serif;
                         font-size: 1.2em;
+                        &:hover {
+                            color: #CC031D;
+                        }
                     }
                 }
             }

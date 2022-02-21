@@ -1,10 +1,22 @@
-%titulo-carousel {
-    color: #11468F;
+%titulo-carousel-dark {
+    color: #001523;
     font-family: 'Mulish', sans-serif;
     font-size: 45px;
+    font-weight: bolder;
 }
-%texto-carousel {
-    color: #F3950D;
+%titulo-carousel-light {
+    color: #E9E5D6;
+    font-family: 'Mulish', sans-serif;
+    font-size: 45px;
+    font-weight: bolder;
+}
+%texto-carousel-dark {
+    color: #ECECEC;
+    font-family: 'Mulish', sans-serif;
+    font-size: 30px;
+}
+%texto-carousel-light {
+    color: #FDEBF7;
     font-family: 'Mulish', sans-serif;
     font-size: 30px;
 }
@@ -12,4 +24,17 @@
     margin: 0%;
     padding: 0%;
     background-color: #ECECEC;
+}
+%opcion-talles {
+    font-family: 'Mulish', sans-serif;
+    color: #001523;
+    border: none;
+    margin-bottom: 1px;
+}
+%boton-seleccionar{
+    align-self: center;
+    background-color: #CC031D;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
 }

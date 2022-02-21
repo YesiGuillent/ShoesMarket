@@ -33,13 +33,15 @@
     <meta property="og:description" content="Tienda virtual lider en calzado e indumentaria de primera marca para aficionados o profesionales del baloncesto">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./Imagenes/logoshoesmarket/logo-shoes-market.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Imagenes/logoshoesmarket/logo-shoes-market.ico" type="image/x-icon">
     
+
     <title>Shoes Market - La mejor calidad en botas e indumentaria para el basketbolista</title>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-header">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../Imagenes/logoshoesmarket/logo-shoes-market.webp" alt="Logo ShoesMarket" width="55" height="55" class="d-inline-block align-text-top">
@@ -48,7 +50,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse flex-row" id="navbarNav">
-                    <h1 class="nombre-tienda">Shoes Market</h1>
+                    <div>
+                        <a class="nombre-tienda" href="../index.html">Shoes Market</a>
+                        <h1 class="descripcion-site">Tienda Deportiva</h1>
+                    </div>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" id="text" aria-current="page" href="../index.html">Inicio</a>
@@ -61,6 +66,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="text" href="../views/running.html">Running</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="text" href="../views/baloncesto.html">Baloncesto</a>
                         </li>
                         <form class="container-fluid justify-content-start">
                             <button class="btn" id="boton-compra" type="button">Comprar</button>
@@ -95,6 +103,14 @@
                     <p class="card-text">Las KD14 están diseñadas para ayudar a los jugadores versátiles e implacables como KD a mantener la frescura durante todo el partido.</p>
                     <p class="card-text"><strong>$45500</strong></p> 
                 </div>
+                <select class="form-select form-select-sm" id="talles" aria-label="Small select">
+                    <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                    <option value="1">37</option>
+                    <option value="2">39</option>
+                    <option value="3">42</option>
+                    <option value="4">43</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-sm" id="btn-box">Seleccionar</button>                    
             </div>
             <div class="card bg-card" style="width: 22rem;">
                 <img class="card-img-top" src="../Imagenes/Baloncesto/zapatos/lebron-18-nikeBL.png" alt="Zapatillas LeBron">
@@ -103,6 +119,14 @@
                     <p class="card-text">Las LeBron 18 se han diseñado para que saque el máximo partido a sus habilidades y reduzca el estrés al que somete su cuerpo.</p>
                     <p class="card-text"><strong>$52000</strong></p> 
                 </div>
+                <select class="form-select form-select-sm" id="talles" aria-label="Small select">
+                    <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                    <option value="1">37</option>
+                    <option value="2">39</option>
+                    <option value="3">42</option>
+                    <option value="4">43</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-sm" id="btn-box">Seleccionar</button>                    
             </div>
             <div class="card bg-card" style="width: 22rem;">
                 <img class="card-img-top" src="../Imagenes/Baloncesto/zapatos/air-jordan-14-retro-se-nikeBT.jpg" alt="Zapatillas Jordan">
@@ -111,6 +135,14 @@
                     <p class="card-text">Regresa a los inicios de los 2000 con esta combinación de colores clásica. ¿preparado para esta temporada?</p>
                     <p class="card-text"><strong>$50800</strong></p> 
                 </div>
+                <select class="form-select form-select-sm" id="talles" aria-label="Small select">
+                    <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                    <option value="1">37</option>
+                    <option value="2">39</option>
+                    <option value="3">42</option>
+                    <option value="4">43</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-sm" id="btn-box">Seleccionar</button>                    
             </div>
         </div>
     </section>
@@ -130,6 +162,13 @@
                     <p class="card-text">Las muñequeras Jordan Jumpman están confeccionadas con un tejido elástico y absorbente que ayuda a retener el sudor.</p>
                     <p class="card-text"><strong>$2300</strong></p>
                 </div>
+                <select class="form-select form-select-sm" id="talles" aria-label="Small select">
+                    <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                    <option value="1">S</option>
+                    <option value="2">M</option>
+                    <option value="3">L</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-sm" id="btn-box">Seleccionar</button>
             </div>
             <div class="card bg-card" style="width: 22rem;">
                 <img class="card-img-top" src="../Imagenes/Baloncesto/indumentaria/Pantalon_corto_Allen_Iverson_I3_Mesh_reebokBL.jpg" alt="ShortIverson Mesh">
@@ -138,6 +177,14 @@
                     <p class="card-text">Luce todos los detalles del baloncesto original que te gustan con este pantalón corto. La malla transpirable mantiene tu piel fresca.</p>
                     <p class="card-text"><strong>$10500</strong></p>
                 </div>
+                <select class="form-select form-select-sm" id="talles" aria-label="Small select">
+                    <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                    <option value="1">S</option>
+                    <option value="2">M</option>
+                    <option value="3">L</option>
+                    <option value="4">2XL</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-sm" id="btn-box">Seleccionar</button>
             </div>
             <div class="card bg-card" style="width: 22rem;">
                 <img class="card-img-top" src="../Imagenes/Baloncesto/indumentaria/Camiseta_Iverson_reebokBL.jpg" alt="Musculosa Iverson">
@@ -146,6 +193,14 @@
                     <p class="card-text">Camiseta con el logo I3 de Iverson y el Reebok Vector, reversible para hombre. Combínala con tu actitud y llévala de dos maneras distintas.</p>
                     <p class="card-text"><strong>$9990</strong></p>
                 </div>
+                <select class="form-select form-select-sm" id="talles" aria-label="Small select">
+                    <option class="menu-talle" selected="">Selecciona tu talle:</option>
+                    <option value="1">S</option>
+                    <option value="2">M</option>
+                    <option value="3">L</option>
+                    <option value="4">2XL</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-sm" id="btn-box">Seleccionar</button>
             </div>
         </div>
     </section> 
@@ -159,10 +214,8 @@
         </form>
         <div class="ubicacion">
             <div class="direccion">
-            <i class="fas fa-map-marker-alt"></i>
-            <p class="parrafo-direccion">Ameghino 428, Buenos Aires</p>               
-            </div>
-            <div class="mail">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="parrafo-direccion">Ameghino 428, Buenos Aires</p>
                 <i class="fas fa-envelope"></i>
                 <p class="parrafo-mail">contacto@shoesmarket.com</p>
             </div>
@@ -173,8 +226,8 @@
             <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
         </div>
         <p class="copyrights">&copy;2021 Yesi Guillent</p>
-        <!-- Fin footer -->
     </footer>
+    <!-- Fin footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
