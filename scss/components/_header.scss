@@ -15,12 +15,14 @@ header {
                 color: $color-font;
             }
             div {
-                .nombre-tienda{
-                    color: #fff;
-                    margin-bottom: 0%;
-                    font-family: 'Mitr', sans-serif;
-                    font-size: $font-name;
-                    text-decoration: none;
+                div {
+                    .nombre-tienda{
+                        color: #fff;
+                        margin-bottom: 0%;
+                        font-family: 'Mitr', sans-serif;
+                        font-size: $font-name;
+                        text-decoration: none;
+                    }
                 }
                 .descripcion-site{
                     color: #fff;
